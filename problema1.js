@@ -3,13 +3,13 @@ function calcularCalificacion() {
     const p2 = parseFloat(document.getElementById('nota2').value);
     const p3 = parseFloat(document.getElementById('nota3').value);
     
-    const notaParciales60 = (p1 + p2 + p3) * 0.2;
+    const notaParciales = (p1 + p2 + p3) * 0.2;
     
 
-    const notaA = (91 - notaParciales60) / 0.4;
-    const notaB = (81 - notaParciales60) / 0.4;
-    const notaC = (71 - notaParciales60) / 0.4;
-    const notaD = (61 - notaParciales60) / 0.4;
+    const notaA = (91 - notaParciales) / 0.4;
+    const notaB = (81 - notaParciales) / 0.4;
+    const notaC = (71 - notaParciales) / 0.4;
+    const notaD = (61 - notaParciales) / 0.4;
 
     let resultado = "";
     resultado += `Para la A: ${notaA > 100 ? 'No es posible' : notaA.toFixed(2)}\n`;
